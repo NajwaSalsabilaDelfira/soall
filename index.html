@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal dan Jawaban HTML - Gaya Google Forms</title>
+    <style>
+        body {
+            font-family: fontnazwa, Georgia, Times, 'Times New Roman';
+            margin: 0;
+            padding: 0;
+            background-color: #ffe7e7;
+        }
+
+        @font-face {
+            font-family: fontnazwa;
+            src: url(Stimcard.ttf);
+        }
+
+        .form-container {
+            background-color: rgb(245, 211, 211);
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 100%;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1, h2 {
+            color: #e6f2f4;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fffcfc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #e29ee0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #dda7d6;
+        }
+
+        .form-footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .bg-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: rgba(244, 237, 243, 0.8);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .bg-container label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .bg-container input[type="file"] {
+            padding: 5px;
+        }
+
+        .background-preview {
+            margin-top: 20px;
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Form container -->
+    <div class="form-container" id="formContainer">
+        <h1>Soal dan Jawaban Seputar HTML</h1>
+
+        <!-- Pertanyaan 1 -->
+        <div class="question">
+            <label>1.a. Apa yang dimaksud dengan tag pada HTML?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>1.b. Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua jenis tag?</label>
+            <textarea placeholder=" ..."></textarea>
+        </div>
+
+        <!-- Pertanyaan 2 -->
+        <div class="question">
+            <label>2.a. Apa yang dimaksud dengan element?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>2.b. Apa yang dimaksud dengan tagname, attribute, dan content pada element?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>2.c. Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="question">
+            <label>3.a. Apa yang dimaksud dengan anchor?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>3.b. Bagaimana caranya anchor dapat berfungsi, baik dari sisi pendefinisian ataupun pengaplikasiannya?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+
+        <!-- Pertanyaan 4 - Text and Image -->
+        <div class="question">
+            <label>4.a. Sebutkan tag yang dapat digunakan untuk memanipulasi konten teks pada HTML, serta jelaskan fungsinya!</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>4.b. Sebutkan tag yang dapat digunakan untuk memanipulasi struktur konten teks pada HTML!</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+
+        <!-- Pertanyaan tentang Image -->
+        <div class="question">
+            <label>4.c. Apabila sebuah tag image tidak menampilkan gambar sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal tersebut?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>4.d. Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi? Jelaskan!</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+
+        <!-- Pertanyaan tentang Audio dan Video -->
+        <div class="question">
+            <label>4.e. Bagaimana caranya untuk kita dapat memasukkan audio source dari web (non-lokal)?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+        <div class="question">
+            <label>4.f. Apa yang biasanya terjadi apabila atribut autoplay pada tag video tidak berjalan? Apa yang harus Anda lakukan sehingga atribut tersebut dapat berfungsi dengan semestinya?</label>
+            <textarea placeholder="..."></textarea>
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+        <div class="form-footer">
+            <p>© 2024 Form HTML</p>
+        </div>
+    </div>
+
+    <script>
+        const bgInput = document.getElementById('bgInput');
+        const formContainer = document.getElementById('formContainer');
+        const backgroundPreview = document.getElementById('backgroundPreview');
+
+        bgInput.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    formContainer.style.backgroundImage = `url(${event.target.result})`;
+                    formContainer.style.backgroundSize = 'cover';
+                    formContainer.style.backgroundPosition = 'center';
+                    formContainer.style.backgroundRepeat = 'no-repeat';
+                    backgroundPreview.src = event.target.result;
+                    backgroundPreview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
